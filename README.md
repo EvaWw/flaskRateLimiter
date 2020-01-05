@@ -1,7 +1,7 @@
 # Rate limiter
 
-A rate limiter based on Redis with a flask project example
-The limiter will limit the requests number in a period of the website
+A rate limiter based on Redis with a flask project example.
+The limiter will limit the requests number in a period of the website.
 Config the setting of the limiter by configFile.json, default be 100 requests per hour.
 
 ---
@@ -17,6 +17,7 @@ $ pip install -r requirements.txt
 ### Download and Install Redis
 
 Linux or MAC : https://redis.io/
+
 Windows: https://github.com/dmajkic/redis/downloads
 
 Get into your redis folder in shell, open the redis server
@@ -40,11 +41,13 @@ $ flask run
 ```
 
 After running the project, the website can be accessed by the url specified in the shell.(default 127.0.0.1:5000)
+
 The website will return 429 code and secondes you should wait if you reach the limit
 
 ### Rate limiter only
 
 Copy the rateLimiter folder and configFile.json into your module folder.
+
 As well as copy the class configLimiter() into your "config.py", or simply copy the config.py file if you do not have a config.py file
 
 ```python
@@ -70,13 +73,16 @@ example:
 }
 ```
 
-Redis is for redis db setting
-REQUEST_ALLOWED is the number of requests allowed in the period
-TIME_SEESION is the time period, can be specified by "number" + "hour"/"hours"/"minute"/"minutes"/"second"/"seconds"
+Redis is for redis db setting.
+
+REQUEST_ALLOWED is the number of requests allowed in the period.
+
+TIME_SEESION is the time period, can be specified by "number" + "hour"/"hours"/"minute"/"minutes"/"second"/"seconds".
 
 ## Test
 
 Copy limiterTest.py and configFileTest.json into your module folder.
+
 Flush the redis db before testing
 
 ```shell
