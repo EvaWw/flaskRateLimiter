@@ -11,6 +11,7 @@ class configLimiter(object):
         self.port = data['Redis']['REDIS_PORT']
         self.passwrd = data['Redis']['REDIS_PASSWORD']
         self.requests = data['timeLimit']['REQUEST_ALLOWED']
+        self.freeList = data['freeList']
         time = data['timeLimit']['TIME_SEESION']
         timeSplit = time.split()
         switcher = {

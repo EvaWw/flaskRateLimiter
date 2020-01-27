@@ -4,5 +4,6 @@
             "REDIS_PASSWORD": "",
             "REDIS_HOST" : "127.0.0.1"},
 "timeLimit" : {"REQUEST_ALLOWED" : 100, 
-                "TIME_SEESION" : "1 hour"}
+                "TIME_SEESION" : "1 hour"},
+"freeList" : ["223.199.24.230:9999"]
 }
